@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script displays lines containing the bash word,
+# shellcheck disable=SC2009
+# thus allowing you to easily get the PID
+# of this pash process
+ps axuf | grep bash
