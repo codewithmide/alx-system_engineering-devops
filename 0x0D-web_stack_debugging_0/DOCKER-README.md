@@ -1,5 +1,6 @@
 # Readme
 - [What is Docker and why is it popular?](https://www.zdnet.com/article/what-is-docker-and-why-is-it-so-darn-popular/)
+
 Let’s first pull a Docker image and run a container:
 ```
 vagrant@ubuntu-xenial:~$ docker ps
