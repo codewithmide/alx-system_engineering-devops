@@ -12,6 +12,6 @@ echo "Hello World!" > /var/www/html/index.nginx-debian.html
 ## Service nginx - start.
 sudo service nginx start
 ## Redirecting to another page (The redirection must be a “301 Moved Permanently”)
-sudo sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v=NdYWuo9OFAw permanent;/" /etc/nginx/sites-available/default
+sudo sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4 permanent;/" /etc/nginx/sites-available/default
 ## Service nginx - restart.
 sudo service nginx restart
