@@ -8,6 +8,6 @@ sudo apt-get -y install nginx
 ## Change User /var/www
 sudo chown -R ubuntu /var/www
 ## Change file default --> index.html to nginx.
-echo "Hello World" > /var/www/html/index.nginx-debian.html
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
 ## Service nginx - start.
 sudo service nginx start
