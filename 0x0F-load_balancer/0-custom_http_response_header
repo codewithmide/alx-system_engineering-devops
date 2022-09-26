@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
-# Configure servers and add a custom Nginx response header
+# Script that it configures a brand new Ubuntu machine to the requirements asked
 
-sudo apt-get update
-sudo apt install nginx -y
-sudo chown -R ubuntu /var/www/html
-echo "Ceci n'est pas une page" > /var/www/html/404.html
-replace="\n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}\n"
-replace2="\n\\terror_page 404 /404.html;\n\tlocation = /var/www/html/404.html {\n\t\tinternal;\n\t}"
-replace3="\n\tadd_header X-Served-By \$hostname;"
-sudo sed -i "47i\ $replace3$replace$replace2" /etc/nginx/sites-available/default
-sudo service nginx restart
-sudo service nginx reload
+apt-get update
+apt-get -y install nginx
+sed -i "/server_name _;/a add_header X-Served-By '$HOSTNAME';" /etc/nginx/sites-available/default
+service nginx restart
