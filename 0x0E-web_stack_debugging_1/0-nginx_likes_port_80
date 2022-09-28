@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+## line update linux
+sudo apt-get update -y
+## line upgrade linux
+sudo apt-get upgrade -y
+## line install nginx correct file 
+sudo apt-get install nginx -y
+## line remplace 8080/80
+sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+## line service nginx restart
+sudo service nginx restart

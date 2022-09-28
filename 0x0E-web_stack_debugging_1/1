@@ -1,0 +1,110 @@
+Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Hit:2 http://nginx.org/packages/ubuntu focal InRelease
+Hit:3 http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu focal InRelease
+Hit:4 http://ppa.launchpad.net/vbernat/haproxy-2.6/ubuntu focal InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu focal InRelease
+Get:6 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Hit:8 https://deb.nodesource.com/node_14.x focal InRelease
+Get:9 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [1,667 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2,641 kB]
+Get:11 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [1,550 kB]
+Get:12 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2,174 kB]
+Fetched 8,368 kB in 1min 33s (90.3 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages were automatically installed and are no longer required:
+  iproute2 libatm1 libxslt1.1
+Use 'sudo apt autoremove' to remove them.
+The following packages have been kept back:
+  ruby
+The following packages will be upgraded:
+  base-files bind9-dnsutils bind9-host bind9-libs dnsutils ghostscript
+  libcurl3-gnutls libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin
+  libgdk-pixbuf2.0-common libgs9 libgs9-common libjpeg-turbo8 libnss-systemd
+  libpam-systemd libpcre2-8-0 libsqlite3-0 libsqlite3-dev libsystemd0 libtiff5
+  libudev1 libwayland-client0 libwayland-cursor0 libwayland-egl1
+  linux-libc-dev nodejs python-apt-common python3-apt systemd systemd-sysv
+  systemd-timesyncd tzdata vim vim-common vim-runtime xxd
+36 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Need to get 45.1 MB of archives.
+After this operation, 22.5 kB disk space will be freed.
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 base-files amd64 11ubuntu5.6 [60.4 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libnss-systemd amd64 245.4-4ubuntu3.18 [96.1 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd-timesyncd amd64 245.4-4ubuntu3.18 [28.1 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd-sysv amd64 245.4-4ubuntu3.18 [10.3 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpam-systemd amd64 245.4-4ubuntu3.18 [186 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpcre2-8-0 amd64 10.34-7ubuntu0.1 [198 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd amd64 245.4-4ubuntu3.18 [3,808 kB]
+Get:8 https://deb.nodesource.com/node_14.x focal/main amd64 nodejs amd64 14.20.1-deb-1nodesource1 [25.4 MB]
+Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsystemd0 amd64 245.4-4ubuntu3.18 [269 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libudev1 amd64 245.4-4ubuntu3.18 [76.3 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsqlite3-dev amd64 3.31.1-4ubuntu0.4 [699 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsqlite3-0 amd64 3.31.1-4ubuntu0.4 [549 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 tzdata all 2022c-0ubuntu0.20.04.0 [288 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 vim amd64 2:8.1.2269-1ubuntu5.9 [1,238 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 vim-runtime all 2:8.1.2269-1ubuntu5.9 [5,873 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 xxd amd64 2:8.1.2269-1ubuntu5.9 [50.0 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 vim-common all 2:8.1.2269-1ubuntu5.9 [85.0 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 bind9-dnsutils amd64 1:9.16.1-0ubuntu2.11 [134 kB]
+Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 bind9-libs amd64 1:9.16.1-0ubuntu2.11 [1,108 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 bind9-host amd64 1:9.16.1-0ubuntu2.11 [43.0 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python-apt-common all 2.0.0ubuntu0.20.04.8 [17.1 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-apt amd64 2.0.0ubuntu0.20.04.8 [154 kB]
+Get:23 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 dnsutils all 1:9.16.1-0ubuntu2.11 [2,756 B]
+Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ghostscript amd64 9.50~dfsg-5ubuntu4.6 [51.8 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgs9 amd64 9.50~dfsg-5ubuntu4.6 [2,173 kB]
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgs9-common all 9.50~dfsg-5ubuntu4.6 [681 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtiff5 amd64 4.1.0+git191117-2ubuntu0.20.04.5 [162 kB]
+Get:28 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcurl3-gnutls amd64 7.68.0-1ubuntu2.13 [233 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-0 amd64 2.40.0+dfsg-3ubuntu0.4 [168 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-common all 2.40.0+dfsg-3ubuntu0.4 [4,592 B]
+Get:31 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-bin amd64 2.40.0+dfsg-3ubuntu0.4 [14.1 kB]
+Get:32 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libjpeg-turbo8 amd64 2.0.3-0ubuntu1.20.04.3 [118 kB]
+Get:33 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwayland-client0 amd64 1.18.0-1ubuntu0.1 [23.9 kB]
+Get:34 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwayland-cursor0 amd64 1.18.0-1ubuntu0.1 [10.3 kB]
+Get:35 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwayland-egl1 amd64 1.18.0-1ubuntu0.1 [5,596 B]
+Get:36 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-libc-dev amd64 5.4.0-126.142 [1,118 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 45.1 MB in 19s (2,389 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 84997 files and directories currently installed.)
+Preparing to unpack .../base-files_11ubuntu5.6_amd64.deb ...
+Unpacking base-files (11ubuntu5.6) over (11ubuntu5.5) ...
+Setting up base-files (11ubuntu5.6) ...
+Installing new version of config file /etc/issue ...
+Installing new version of config file /etc/issue.net ...
+Installing new version of config file /etc/lsb-release ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 84997 files and directories currently installed.)
+Preparing to unpack .../libnss-systemd_245.4-4ubuntu3.18_amd64.deb ...
+Unpacking libnss-systemd:amd64 (245.4-4ubuntu3.18) over (245.4-4ubuntu3.17) ...
+Preparing to unpack .../systemd-timesyncd_245.4-4ubuntu3.18_amd64.deb ...
+Unpacking systemd-timesyncd (245.4-4ubuntu3.18) over (245.4-4ubuntu3.17) ...
+Preparing to unpack .../systemd-sysv_245.4-4ubuntu3.18_amd64.deb ...
+Unpacking systemd-sysv (245.4-4ubuntu3.18) over (245.4-4ubuntu3.17) ...
+Preparing to unpack .../libpam-systemd_245.4-4ubuntu3.18_amd64.deb ...
+Unpacking libpam-systemd:amd64 (245.4-4ubuntu3.18) over (245.4-4ubuntu3.17) ...
+Preparing to unpack .../libpcre2-8-0_10.34-7ubuntu0.1_amd64.deb ...
+Unpacking libpcre2-8-0:amd64 (10.34-7ubuntu0.1) over (10.34-7) ...
+Setting up libpcre2-8-0:amd64 (10.34-7ubuntu0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 84997 files and directories currently installed.)
+Preparing to unpack .../systemd_245.4-4ubuntu3.18_amd64.deb ...
+Unpacking systemd (245.4-4ubuntu3.18) over (245.4-4ubuntu3.17) ...
+Preparing to unpack .../libsystemd0_245.4-4ubuntu3.18_amd64.deb ...
+Unpacking libsystemd0:amd64 (245.4-4ubuntu3.18) over (245.4-4ubuntu3.17) ...
+Setting up libsystemd0:amd64 (245.4-4ubuntu3.18) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 84997 files and directories currently installed.)
+Preparing to unpack .../libudev1_245.4-4ubuntu3.18_amd64.deb ...
+Unpacking libudev1:amd64 (245.4-4ubuntu3.18) over (245.4-4ubuntu3.17) ...
+Setting up libudev1:amd64 (245.4-4ubuntu3.18) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 84997 files and directories currently installed.)
+Preparing to unpack .../00-libsqlite3-dev_3.31.1-4ubuntu0.4_amd64.deb ...
+Unpacking libsqlite3-dev:amd64 (3.31.1-4ubuntu0.4) over (3.31.1-4ubuntu0.3) ...
+Preparing to unpack .../01-libsqlite3-0_3.31.1-4ubuntu0.4_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.31.1-4ubuntu0.4) over (3.31.1-4ubuntu0.3) ...
+Preparing to unpack .../02-tzdata_2022c-0ubuntu0.20.04.0_all.deb ...
+Unpacking tzdata (2022c-0ubuntu0.20.04.0) over (2022a-0ubuntu0.20.04) ...
+Preparing to unpack .../03-vim_2%3a8.1.2269-1ubuntu5.9_amd64.deb ...
+Unpacking vim (2:8.1.2269-1ubuntu5.9) over (2:8.1.2269-1ubuntu5.7) ...
