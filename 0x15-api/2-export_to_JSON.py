@@ -1,29 +1,25 @@
 #!/usr/bin/python3
-"""extend your Python script to export data in the JSON format"""
+""" a Python script that, using a REST API, for a given employee ID,
+    returns information about his/her TODO list progress."""
 import json
 import requests
-from sys import argv
+import sys
 
 
-if __name__ == "__main__":
-    """Your code should not be executed when imported"""
-
-    user_id = argv[1]
-
-    todos = requests.get(
-        "http://jsonplaceholder.typicode.com/todos?userId={}".format(
-            user_id))
-    user = requests.get(
-        "http://jsonplaceholder.typicode.com/users/{}".format(
-            user_id))
-
-    out = {user.json().get('id'): []}
-    with open('{}.csv'.format(user_id), "w") as output:
-        for tarea in todos.json():
-            data = {
-                'task': tarea.get('title'),
-                'completed': tarea.get('completed'),
-                'username': user.json().get('username')
-            }
-            out.get(user.json().get('id')).append(data)
-        json.dump(out, output)
+if __name__ == '__main__':
+    url = 'https://jsonplaceholder.typicode.com/users?id=' + sys.argv[1]
+    r = requests.get(url)
+    if r.status_code == 200:
+        data = {sys.argv[1]: []}
+        username = r.json()[0].get("username")
+        url2 = 'https://jsonplaceholder.typicode.com/todos'
+        r2 = requests.get(url2)
+        for item in r2.json():
+            if item.get("userId") == int(sys.argv[1]):
+                d = {'task': item.get('title'),
+                     'completed': item.get('completed'),
+                     'username': username}
+                data[sys.argv[1]].append(d)
+    filename = sys.argv[1] + '.json'
+    with open(filename, 'w') as f:
+        json.dump(data, f)
