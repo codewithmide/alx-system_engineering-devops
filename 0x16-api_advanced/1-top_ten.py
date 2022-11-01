@@ -9,14 +9,14 @@ If not a valid subreddit, print None.
 NOTE: Invalid subreddits may return a redirect to search results.
 Ensure that you are not following redirects.
 """
-import requests
-import json
 
 
 def top_ten(subreddit):
     """
     If not a valid subreddit, print None.
     """
+    import json
+    import requests
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {
         "User-Agent": "User Agent"
