@@ -11,7 +11,7 @@ listen 19018-lb-01
         balance roundrobin
         option httpclose
         option forwardfor
-        server 19018-web-01 3.236.44.83 check
-        server 19018-web-02 44.200.29.105 check
+        server 19018-web-01 100.26.224.142 check
+        server 19018-web-02 54.160.106.148 check
 " >> /etc/haproxy/haproxy.cfg
 service haproxy restart
