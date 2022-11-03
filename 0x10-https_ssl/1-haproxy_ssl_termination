@@ -40,5 +40,5 @@ listen 19018-lb-01
         balance roundrobin
         reqadd X-Forwarded-Port:\ 443
         option forwardfor
-        server 19018-web-01 3.236.44.83:80 check
-        server 19018-web-02 44.200.29.105:80 check
+        server 19018-web-01 100.26.224.142:80 check
+        server 19018-web-02 54.160.106.148:80 check
